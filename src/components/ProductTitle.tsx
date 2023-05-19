@@ -4,11 +4,7 @@ import styles from "../styles/styles.module.css";
 import { ProductContext } from "./ProductCard";
 import { ProductTitleProps } from "../interfaces/interfaces";
 
-export const ProductTitle = ({
-  title = "",
-  className,
-  style,
-}: ProductTitleProps) => {
+export const ProductTitle = ({ title = "", className, style }: ProductTitleProps) => {
   const { product } = useContext(ProductContext);
 
   return (
